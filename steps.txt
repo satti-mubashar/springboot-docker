@@ -1,0 +1,5 @@
+docker build -t springboot-k8s-example:1.0 .
+docker run -d --name spring-boot-k8s springboot-k8s-example:1.0
+kubectl apply -f deployment.yaml
+kubectl get deployments
+kubectl get pods
